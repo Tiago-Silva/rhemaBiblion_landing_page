@@ -24,5 +24,5 @@ Este repositório está configurado para publicar automaticamente via **GitHub A
 
 1. Ao realizar alterações na branch `main`, a página é atualizada instantaneamente.
 2. O site fica disponível publicamente no endereço:
-   `https://<seu-usuario>.github.io/rhemaBiblion-landing_page`
+   `https://<seu-usuario>.github.io/rhemaBiblion_landing_page`
 

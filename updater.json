@@ -5,26 +5,26 @@
   "platforms": {
     "linux-x86_64": {
       "signature": "dW51c2VkX3NpZ25hdHVyZV9wbGFjZWhvbGRlcg==",
-      "url": "https://github.com/Tiago-Silva/rhemaBiblion-landing_page/releases/latest/download/rhemabiblion_1.6.0_amd64.AppImage"
+      "url": "https://github.com/Tiago-Silva/rhemaBiblion_landing_page/releases/latest/download/rhemabiblion_1.6.0_amd64.AppImage"
     },
     "windows-x86_64": {
       "signature": "dW51c2VkX3NpZ25hdHVyZV9wbGFjZWhvbGRlcg==",
-      "url": "https://github.com/Tiago-Silva/rhemaBiblion-landing_page/releases/latest/download/rhemabiblion_1.6.0_x64-setup.exe"
+      "url": "https://github.com/Tiago-Silva/rhemaBiblion_landing_page/releases/latest/download/rhemabiblion_1.6.0_x64-setup.exe"
     },
     "darwin-x86_64": {
       "signature": "dW51c2VkX3NpZ25hdHVyZV9wbGFjZWhvbGRlcg==",
-      "url": "https://github.com/Tiago-Silva/rhemaBiblion-landing_page/releases/latest/download/rhemabiblion_1.6.0_universal.app.tar.gz"
+      "url": "https://github.com/Tiago-Silva/rhemaBiblion_landing_page/releases/latest/download/rhemabiblion_1.6.0_universal.app.tar.gz"
     },
     "darwin-aarch64": {
       "signature": "dW51c2VkX3NpZ25hdHVyZV9wbGFjZWhvbGRlcg==",
-      "url": "https://github.com/Tiago-Silva/rhemaBiblion-landing_page/releases/latest/download/rhemabiblion_1.6.0_universal.app.tar.gz"
+      "url": "https://github.com/Tiago-Silva/rhemaBiblion_landing_page/releases/latest/download/rhemabiblion_1.6.0_universal.app.tar.gz"
     }
   },
   "downloads": {
-    "android": "https://github.com/Tiago-Silva/rhemaBiblion-landing_page/releases/latest/download/app-universal-release.apk",
-    "windows": "https://github.com/Tiago-Silva/rhemaBiblion-landing_page/releases/latest/download/rhemabiblion_1.6.0_x64-setup.exe",
-    "macos": "https://github.com/Tiago-Silva/rhemaBiblion-landing_page/releases/latest/download/rhemabiblion_1.6.0_universal.dmg",
-    "linux_appimage": "https://github.com/Tiago-Silva/rhemaBiblion-landing_page/releases/latest/download/rhemabiblion_1.6.0_amd64.AppImage",
-    "linux_script": "https://tiago-silva.github.io/rhemaBiblion-landing_page/install.sh"
+    "android": "https://github.com/Tiago-Silva/rhemaBiblion_landing_page/releases/latest/download/app-universal-release.apk",
+    "windows": "https://github.com/Tiago-Silva/rhemaBiblion_landing_page/releases/latest/download/rhemabiblion_1.6.0_x64-setup.exe",
+    "macos": "https://github.com/Tiago-Silva/rhemaBiblion_landing_page/releases/latest/download/rhemabiblion_1.6.0_universal.dmg",
+    "linux_appimage": "https://github.com/Tiago-Silva/rhemaBiblion_landing_page/releases/latest/download/rhemabiblion_1.6.0_amd64.AppImage",
+    "linux_script": "https://tiago-silva.github.io/rhemaBiblion_landing_page/install.sh"
   }
 }

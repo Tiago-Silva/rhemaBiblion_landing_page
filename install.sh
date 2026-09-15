@@ -28,11 +28,11 @@ mkdir -p "$DESKTOP_DIR"
 
 # 3. Fetch latest release AppImage URL from GitHub API
 echo "Resolving latest release package..."
-APPIMAGE_URL=$(curl -s https://api.github.com/repos/Tiago-Silva/rhemaBiblion-landing_page/releases/latest | grep "browser_download_url.*AppImage" | cut -d '"' -f 4 || true)
+APPIMAGE_URL=$(curl -s https://api.github.com/repos/Tiago-Silva/rhemaBiblion_landing_page/releases/latest | grep "browser_download_url.*AppImage" | cut -d '"' -f 4 || true)
 
 if [ -z "$APPIMAGE_URL" ]; then
     echo "Could not resolve dynamically. Using fallback release link..."
-    APPIMAGE_URL="https://github.com/Tiago-Silva/rhemaBiblion-landing_page/releases/latest/download/rhemabiblion_1.1.0_amd64.AppImage"
+    APPIMAGE_URL="https://github.com/Tiago-Silva/rhemaBiblion_landing_page/releases/latest/download/rhemabiblion_1.1.0_amd64.AppImage"
 fi
 
 echo "Downloading AppImage from: $APPIMAGE_URL"
@@ -57,7 +57,7 @@ chmod +x "$BIN_DIR/rhemabiblion"
 
 # 5. Fetch High Resolution Icon
 echo "Installing application launcher icon..."
-curl -L "https://tiago-silva.github.io/rhemaBiblion-landing_page/public/rhemabiblion.png" -o "$INSTALL_DIR/rhemabiblion.png"
+curl -L "https://tiago-silva.github.io/rhemaBiblion_landing_page/public/rhemabiblion.png" -o "$INSTALL_DIR/rhemabiblion.png"
 
 # 6. Create Desktop Menu Launcher Entry
 echo "Creating desktop shortcut entry..."
