@@ -10,7 +10,7 @@
 * **Demonstração em Tempo Real (Mockup):** Exibição interativa da Morfologia Interlinear com lemas gregos/hebraicos e traduções em Português do Brasil.
 * **Sincronização em Nuvem (Google Drive Vault):** Sincronização automática entre Desktop e Dispositivos Móveis para notas, sermões em Markdown e módulos instalados diretamente pelo *Painel de Estudos*.
 * **Hub Oficial de Downloads Multiplataforma:**
-  * 💻 **Windows:** Instaladores `.exe` e `.msi`
+  * 💻 **Windows:** Microsoft Store (Loja Oficial) e Instaladores manuais `.exe` / `.msi`
   * 🐧 **Linux:** Pacotes `.AppImage`, `.deb`, `.rpm` e script de instalação automática
   * 🍏 **macOS:** Imagens `.dmg` universais (Intel e Apple Silicon)
   * 📱 **Android:** Arquivo `.apk` oficial para smartphones e tablets
