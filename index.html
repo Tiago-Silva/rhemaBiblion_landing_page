@@ -456,55 +456,61 @@
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
         
         <!-- Windows Card -->
-        <div class="glass-card rounded-2xl p-6 text-center border border-white/10 hover:border-blue-500/50 transition-all flex flex-col items-center">
-          <div class="w-14 h-14 rounded-2xl bg-blue-500/10 border border-blue-500/30 flex items-center justify-center text-blue-400 mb-4">
-            <i data-lucide="monitor" class="w-7 h-7"></i>
+        <div class="glass-card rounded-2xl p-4 sm:p-5 xl:p-6 text-center border border-white/10 hover:border-blue-500/50 transition-all flex flex-col items-center justify-between">
+          <div class="w-full flex flex-col items-center">
+            <div class="w-14 h-14 rounded-2xl bg-blue-500/10 border border-blue-500/30 flex items-center justify-center text-blue-400 mb-4">
+              <i data-lucide="monitor" class="w-7 h-7"></i>
+            </div>
+            <h3 class="font-heading font-bold text-lg text-white mb-1">Windows</h3>
+            <p class="text-xs text-gray-400 mb-4 min-h-[32px] flex items-center justify-center leading-tight">Loja Oficial & Instaladores (Windows 10/11)</p>
           </div>
-          <h3 class="font-heading font-bold text-lg text-white mb-1">Windows</h3>
-          <p class="text-xs text-gray-400 mb-4">Loja Oficial & Instaladores (Windows 10/11)</p>
           
-          <!-- Microsoft Store Button (Oficial & Destacado) -->
-          <a href="https://apps.microsoft.com/detail/9nqkf8dtbzfz?hl=pt-BR&gl=BR" target="_blank" rel="noopener noreferrer" class="w-full mb-3 py-3 rounded-xl bg-gradient-to-r from-blue-600 via-indigo-600 to-sky-500 hover:from-blue-500 hover:to-sky-400 text-white font-bold text-xs transition-all shadow-lg shadow-blue-500/25 flex items-center justify-center gap-2 hover:scale-[1.02]">
-            <svg class="w-4 h-4 fill-current shrink-0" viewBox="0 0 24 24">
-              <path d="M0 3.449L9.75 2.1v9.451H0m10.95-9.6L24 0v11.4H10.95m-10.95.75H9.75V21.6L0 20.25m10.95-7.95H24V24l-13.05-1.8"/>
-            </svg>
-            <span>Obter na Microsoft Store</span>
-            <i data-lucide="external-link" class="w-3.5 h-3.5 opacity-80"></i>
-          </a>
+          <div class="w-full space-y-3">
+            <!-- Microsoft Store Button (Oficial & Destacado - Responsivo & Single-Line) -->
+            <a href="https://apps.microsoft.com/detail/9nqkf8dtbzfz?hl=pt-BR&gl=BR" target="_blank" rel="noopener noreferrer" class="w-full py-3 px-2 rounded-xl bg-gradient-to-r from-blue-600 via-indigo-600 to-sky-500 hover:from-blue-500 hover:to-sky-400 text-white font-bold text-[11px] xl:text-xs transition-all shadow-lg shadow-blue-500/25 flex items-center justify-center gap-1.5 whitespace-nowrap tracking-tight hover:scale-[1.02]">
+              <svg class="w-4 h-4 fill-current shrink-0" viewBox="0 0 24 24">
+                <path d="M0 3.449L9.75 2.1v9.451H0m10.95-9.6L24 0v11.4H10.95m-10.95.75H9.75V21.6L0 20.25m10.95-7.95H24V24l-13.05-1.8"/>
+              </svg>
+              <span class="truncate">Obter na Microsoft Store</span>
+              <i data-lucide="external-link" class="w-3.5 h-3.5 opacity-80 shrink-0"></i>
+            </a>
 
-          <!-- Dropdown para instaladores manuais (.exe e .msi) -->
-          <div class="relative w-full">
-            <button onclick="toggleDropdown('dropdown-win', event)" class="w-full py-2.5 rounded-xl bg-white/10 hover:bg-white/20 text-gray-200 font-semibold text-xs transition-all flex items-center justify-center gap-2 border border-white/10">
-              <i data-lucide="download" class="w-3.5 h-3.5"></i>
-              <span>Instaladores Manuais</span>
-              <i data-lucide="chevron-down" class="w-3.5 h-3.5 ml-1 opacity-70"></i>
-            </button>
-            <div id="dropdown-win" class="hidden absolute top-full left-0 right-0 mt-2 bg-neutral-900 border border-white/10 rounded-xl shadow-xl z-20 overflow-hidden dropdown-menu">
-              <a href="https://apps.microsoft.com/detail/9nqkf8dtbzfz?hl=pt-BR&gl=BR" target="_blank" rel="noopener noreferrer" class="block px-4 py-2.5 text-xs text-blue-400 font-bold hover:bg-white/10 transition-colors text-left border-b border-white/5 flex items-center gap-2">
-                🛍️ Microsoft Store (Oficial)
-              </a>
-              <a href="#" onclick="downloadDesktopAsset(event, 'setup.exe')" class="block px-4 py-2.5 text-xs text-gray-300 hover:bg-white/10 hover:text-white transition-colors text-left border-b border-white/5">
-                💻 Instalador Executável (.exe)
-              </a>
-              <a href="#" onclick="downloadDesktopAsset(event, '.msi')" class="block px-4 py-2.5 text-xs text-gray-300 hover:bg-white/10 hover:text-white transition-colors text-left">
-                🛠️ Instalador MSI (.msi)
-              </a>
+            <!-- Dropdown para instaladores manuais (.exe e .msi) -->
+            <div class="relative w-full">
+              <button onclick="toggleDropdown('dropdown-win', event)" class="w-full py-2.5 px-2 rounded-xl bg-white/10 hover:bg-white/20 text-gray-200 font-semibold text-xs transition-all flex items-center justify-center gap-1.5 border border-white/10 whitespace-nowrap">
+                <i data-lucide="download" class="w-3.5 h-3.5 shrink-0"></i>
+                <span>Instaladores Manuais</span>
+                <i data-lucide="chevron-down" class="w-3.5 h-3.5 opacity-70 shrink-0"></i>
+              </button>
+              <div id="dropdown-win" class="hidden absolute top-full left-0 right-0 mt-2 bg-neutral-900 border border-white/10 rounded-xl shadow-xl z-20 overflow-hidden dropdown-menu">
+                <a href="https://apps.microsoft.com/detail/9nqkf8dtbzfz?hl=pt-BR&gl=BR" target="_blank" rel="noopener noreferrer" class="block px-4 py-2.5 text-xs text-blue-400 font-bold hover:bg-white/10 transition-colors text-left border-b border-white/5 flex items-center gap-2">
+                  🛍️ Microsoft Store (Oficial)
+                </a>
+                <a href="#" onclick="downloadDesktopAsset(event, 'setup.exe')" class="block px-4 py-2.5 text-xs text-gray-300 hover:bg-white/10 hover:text-white transition-colors text-left border-b border-white/5">
+                  💻 Instalador Executável (.exe)
+                </a>
+                <a href="#" onclick="downloadDesktopAsset(event, '.msi')" class="block px-4 py-2.5 text-xs text-gray-300 hover:bg-white/10 hover:text-white transition-colors text-left">
+                  🛠️ Instalador MSI (.msi)
+                </a>
+              </div>
             </div>
           </div>
         </div>
 
         <!-- Linux Card -->
-        <div class="glass-card rounded-2xl p-6 text-center border border-white/10 hover:border-cyan-500/50 transition-all flex flex-col items-center">
-          <div class="w-14 h-14 rounded-2xl bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-400 mb-4">
-            <i data-lucide="terminal" class="w-7 h-7"></i>
+        <div class="glass-card rounded-2xl p-4 sm:p-5 xl:p-6 text-center border border-white/10 hover:border-cyan-500/50 transition-all flex flex-col items-center justify-between">
+          <div class="w-full flex flex-col items-center">
+            <div class="w-14 h-14 rounded-2xl bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-400 mb-4">
+              <i data-lucide="terminal" class="w-7 h-7"></i>
+            </div>
+            <h3 class="font-heading font-bold text-lg text-white mb-1">Linux</h3>
+            <p class="text-xs text-gray-400 mb-4 min-h-[32px] flex items-center justify-center leading-tight">Pacotes .AppImage / .deb / .rpm</p>
           </div>
-          <h3 class="font-heading font-bold text-lg text-white mb-1">Linux</h3>
-          <p class="text-xs text-gray-400 mb-6">Pacotes .AppImage / .deb / .rpm</p>
           <div class="relative w-full">
-            <button onclick="toggleDropdown('dropdown-linux', event)" class="w-full py-3 rounded-xl bg-cyan-500 hover:bg-cyan-400 text-neutral-950 font-bold text-xs transition-all flex items-center justify-center gap-2">
-              <i data-lucide="download" class="w-4 h-4"></i>
+            <button onclick="toggleDropdown('dropdown-linux', event)" class="w-full py-3 px-2 rounded-xl bg-cyan-500 hover:bg-cyan-400 text-neutral-950 font-bold text-xs transition-all flex items-center justify-center gap-1.5 whitespace-nowrap">
+              <i data-lucide="download" class="w-4 h-4 shrink-0"></i>
               <span>Baixar Linux</span>
-              <i data-lucide="chevron-down" class="w-3.5 h-3.5 ml-1"></i>
+              <i data-lucide="chevron-down" class="w-3.5 h-3.5 shrink-0"></i>
             </button>
             <div id="dropdown-linux" class="hidden absolute top-full left-0 right-0 mt-2 bg-neutral-900 border border-white/10 rounded-xl shadow-xl z-20 overflow-hidden dropdown-menu">
               <a href="https://tiago-silva.github.io/rhemaBiblion_landing_page/install.sh" target="_blank" class="block px-4 py-2.5 text-xs text-amber-400 font-bold hover:bg-white/10 transition-colors text-left border-b border-white/5">
@@ -520,22 +526,23 @@
                 📦 Pacote RedHat/Fedora (.rpm)
               </a>
             </div>
-
           </div>
         </div>
 
         <!-- macOS Card -->
-        <div class="glass-card rounded-2xl p-6 text-center border border-white/10 hover:border-purple-500/50 transition-all flex flex-col items-center">
-          <div class="w-14 h-14 rounded-2xl bg-purple-500/10 border border-purple-500/30 flex items-center justify-center text-purple-400 mb-4">
-            <i data-lucide="laptop" class="w-7 h-7"></i>
+        <div class="glass-card rounded-2xl p-4 sm:p-5 xl:p-6 text-center border border-white/10 hover:border-purple-500/50 transition-all flex flex-col items-center justify-between">
+          <div class="w-full flex flex-col items-center">
+            <div class="w-14 h-14 rounded-2xl bg-purple-500/10 border border-purple-500/30 flex items-center justify-center text-purple-400 mb-4">
+              <i data-lucide="laptop" class="w-7 h-7"></i>
+            </div>
+            <h3 class="font-heading font-bold text-lg text-white mb-1">macOS</h3>
+            <p class="text-xs text-gray-400 mb-4 min-h-[32px] flex items-center justify-center leading-tight">Imagem .dmg Universal (Intel & Apple Silicon)</p>
           </div>
-          <h3 class="font-heading font-bold text-lg text-white mb-1">macOS</h3>
-          <p class="text-xs text-gray-400 mb-6">Imagem .dmg Universal (Intel & Apple Silicon)</p>
           <div class="relative w-full">
-            <button onclick="toggleDropdown('dropdown-mac', event)" class="w-full py-3 rounded-xl bg-purple-500 hover:bg-purple-400 text-neutral-950 font-bold text-xs transition-all flex items-center justify-center gap-2">
-              <i data-lucide="download" class="w-4 h-4"></i>
+            <button onclick="toggleDropdown('dropdown-mac', event)" class="w-full py-3 px-2 rounded-xl bg-purple-500 hover:bg-purple-400 text-neutral-950 font-bold text-xs transition-all flex items-center justify-center gap-1.5 whitespace-nowrap">
+              <i data-lucide="download" class="w-4 h-4 shrink-0"></i>
               <span>Baixar macOS</span>
-              <i data-lucide="chevron-down" class="w-3.5 h-3.5 ml-1"></i>
+              <i data-lucide="chevron-down" class="w-3.5 h-3.5 shrink-0"></i>
             </button>
             <div id="dropdown-mac" class="hidden absolute top-full left-0 right-0 mt-2 bg-neutral-900 border border-white/10 rounded-xl shadow-xl z-20 overflow-hidden dropdown-menu">
               <a href="#" onclick="downloadDesktopAsset(event, '.dmg')" class="block px-4 py-2.5 text-xs text-gray-300 hover:bg-white/10 hover:text-white transition-colors text-left">
@@ -546,19 +553,21 @@
         </div>
 
         <!-- Mobile Card (Android & iOS) -->
-        <div class="glass-card rounded-2xl p-6 text-center border border-white/10 hover:border-emerald-500/50 transition-all flex flex-col items-center">
-          <div class="w-14 h-14 rounded-2xl bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emerald-400 mb-4">
-            <i data-lucide="smartphone" class="w-7 h-7"></i>
+        <div class="glass-card rounded-2xl p-4 sm:p-5 xl:p-6 text-center border border-white/10 hover:border-emerald-500/50 transition-all flex flex-col items-center justify-between">
+          <div class="w-full flex flex-col items-center">
+            <div class="w-14 h-14 rounded-2xl bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emerald-400 mb-4">
+              <i data-lucide="smartphone" class="w-7 h-7"></i>
+            </div>
+            <h3 class="font-heading font-bold text-lg text-white mb-1">Móvel (Android & iOS)</h3>
+            <p class="text-xs text-gray-400 mb-4 min-h-[32px] flex items-center justify-center leading-tight">Instaladores oficiais para dispositivos móveis</p>
           </div>
-          <h3 class="font-heading font-bold text-lg text-white mb-1">Móvel (Android & iOS)</h3>
-          <p class="text-xs text-gray-400 mb-6">Instaladores oficiais para dispositivos móveis</p>
           <div class="relative w-full space-y-2">
-            <button type="button" onclick="downloadLatestAPK(event)" class="w-full py-3 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-neutral-950 font-bold text-xs transition-all flex items-center justify-center gap-2 cursor-pointer border-none outline-none">
-              <i data-lucide="download" class="w-4 h-4"></i>
+            <button type="button" onclick="downloadLatestAPK(event)" class="w-full py-3 px-2 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-neutral-950 font-bold text-xs transition-all flex items-center justify-center gap-1.5 whitespace-nowrap cursor-pointer border-none outline-none">
+              <i data-lucide="download" class="w-4 h-4 shrink-0"></i>
               <span>Baixar APK Android</span>
             </button>
-            <button type="button" onclick="downloadLatestIPA(event)" class="w-full py-3 rounded-xl bg-blue-500 hover:bg-blue-400 text-neutral-950 font-bold text-xs transition-all flex items-center justify-center gap-2 cursor-pointer border-none outline-none">
-              <i data-lucide="download" class="w-4 h-4"></i>
+            <button type="button" onclick="downloadLatestIPA(event)" class="w-full py-3 px-2 rounded-xl bg-blue-500 hover:bg-blue-400 text-neutral-950 font-bold text-xs transition-all flex items-center justify-center gap-1.5 whitespace-nowrap cursor-pointer border-none outline-none">
+              <i data-lucide="download" class="w-4 h-4 shrink-0"></i>
               <span>Baixar para iPhone (.ipa)</span>
             </button>
           </div>
